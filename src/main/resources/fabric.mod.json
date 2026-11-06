@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "cosmetix",
+  "version": "${version}",
+  "name": "Cosmetix",
+  "description": "Client-Mod mit Custom Cosmetics: Capes, Flügel, Hüte und Auren.",
+  "authors": ["Du"],
+  "environment": "client",
+  "entrypoints": {
+    "client": ["dev.cosmetix.CosmetixClient"]
+  },
+  "mixins": [
+    { "config": "cosmetix.mixins.json", "environment": "client" }
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
